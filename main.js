@@ -8,8 +8,14 @@ const main = () => {
   const splitString = () => {
     text_area_str = text_area.value.split(" ");
   }
-  
+
+  const strHandling = () => {
+    // console.log(text_area_str.filter(word => word.length > 0 && word != "." && word != ";" && word != ":" && word != "!" && word != "?" && word != "," && word != "-" && word != "–" && word != "–" && word != "—" && word != "«" && word != "»" && word != "/" && word != "’" && word != "…" && word != "(" && word != ")" && word != "[" && word != "]"));
+    text_area_str_filt = text_area_str.filter(word => word.length > 0 && word != "." && word != ";" && word != ":" && word != "!" && word != "?" && word != "," && word != "-" && word != "–" && word != "–" && word != "—" && word != "«" && word != "»" && word != "/" && word != "’" && word != "…" && word != "(" && word != ")" && word != "[" && word != "]");
+  }
+
   splitString();
+  strHandling();
   setTimeout(main, 33);
 }
 main();
