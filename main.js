@@ -11,7 +11,7 @@ const main = () => {
 
   const strHandling = () => {
     // console.log(text_area_str.filter(word => word.length > 0 && word != "." && word != ";" && word != ":" && word != "!" && word != "?" && word != "," && word != "-" && word != "–" && word != "–" && word != "—" && word != "«" && word != "»" && word != "/" && word != "’" && word != "…" && word != "(" && word != ")" && word != "[" && word != "]"));
-    text_area_str_filt = text_area_str.filter(word => word.length > 0 && word != "." && word != ";" && word != ":" && word != "!" && word != "?" && word != "," && word != "-" && word != "–" && word != "–" && word != "—" && word != "«" && word != "»" && word != "/" && word != "’" && word != "…" && word != "(" && word != ")" && word != "[" && word != "]");
+    text_area_str_filt = text_area_str.filter(word => word.length > 0 && word != "." && word != ";" && word != ":" && word != "!" && word != "?" && word != "," && word != "-" && word != "–" && word != "–" && word != "—" && word != "«" && word != "»" && word != "/" && word != "’" && word != "…" && word != ".." && word != "..." && word != "(" && word != ")" && word != "[" && word != "]");
   }
 
   const plural = () => {
