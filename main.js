@@ -22,9 +22,15 @@ const main = () => {
     }
   }
 
+  const nbWrdDisp = () => {
+    nbr.innerHTML = text_area_str_filt.length;
+    console.log(text_area_str_filt.length);
+  }
+
   splitString();
   strHandling();
   plural();
+  nbWrdDisp();
   setTimeout(main, 33);
 }
 main();
