@@ -14,8 +14,17 @@ const main = () => {
     text_area_str_filt = text_area_str.filter(word => word.length > 0 && word != "." && word != ";" && word != ":" && word != "!" && word != "?" && word != "," && word != "-" && word != "–" && word != "–" && word != "—" && word != "«" && word != "»" && word != "/" && word != "’" && word != "…" && word != "(" && word != ")" && word != "[" && word != "]");
   }
 
+  const plural = () => {
+    if (text_area_str_filt.length <= 1) {
+      wrd_plur.innerHTML = "";
+    } else {
+      wrd_plur.innerHTML = "s";
+    }
+  }
+
   splitString();
   strHandling();
+  plural();
   setTimeout(main, 33);
 }
 main();
